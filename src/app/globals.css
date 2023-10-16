@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  min-width: 900px;
+  min-height: calc(100vh);
+  overflow: hidden;
+}
+
+*::-webkit-scrollbar {
+  background-color: #fff;
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 4px solid #fff;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #999;
+}
+
+*::-webkit-scrollbar-button {
+  display:none;
+}
+
+.no-select-text {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  min-width: 1280px;
+  max-height: 100vh !important;
+  width: 100%;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.desktop {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  padding: 6px 12px;
+}
+
+.activeWindow { 
+  z-index: 6 !important;
+}
+
+.closeBtn {
+  background-color: #FF605C;
+  height: 12px;
+  width: 12px;
+  margin: 4px 0px 4px 4px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeBtn .x {
+  display: none;
+}
+
+.closeBtn:hover .x {
+  display: block;
+}
+
+.closeBtn .x:after {
+  display: flex;
+  content: "•";
+  font-size: 12px; 
+  color: #ffffff;
+  align-items: center;
+}
+
+.terminal a {
+  color: rgb(74 222 128);
+}
+
+.terminal a:hover {
+  color: rgb(21 128 61);
+}

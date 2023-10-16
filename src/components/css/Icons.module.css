@@ -1,0 +1,18 @@
+.wrapper {
+    position: absolute;
+    z-index: 2;
+
+    width: 100px;
+
+    border-radius: 8px;
+    padding: 4px;
+
+    text-align: center;
+    font-size: 14px;
+    
+    cursor: pointer;
+}
+
+.wrapper:hover {
+    background-color: white;
+}
